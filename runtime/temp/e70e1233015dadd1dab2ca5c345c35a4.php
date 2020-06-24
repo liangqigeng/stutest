@@ -1,4 +1,4 @@
-<?php /*a:3:{s:65:"D:\laragon\www\stutests\application\index\view\student\index.html";i:1592569421;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592569204;s:65:"D:\laragon\www\stutests\application\index\view\public\bottom.html";i:1592545332;}*/ ?>
+<?php /*a:3:{s:65:"D:\laragon\www\stutests\application\index\view\student\index.html";i:1592761797;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592569204;s:65:"D:\laragon\www\stutests\application\index\view\public\bottom.html";i:1592545332;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -26,7 +26,7 @@
     <meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
     <meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
 </head>
-<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+<script type="text/javascript" src="/static/lib/laypage/1.2/skin/laypage.css"></script>
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 学生管理 <span class="c-gray en">&gt;</span> 学生列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="pd-20">
@@ -44,20 +44,19 @@
       </tr>
     </thead>
     <tbody>
-    <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-    <tr class="text-c">
-      <td><input type="checkbox" value="<?php echo htmlentities($v['uid']); ?>" name=""></td>
-      <td><?php echo htmlentities($v['uid']); ?></td>
-      <td><?php echo htmlentities($v['username']); ?></td>
-      <td><?php echo htmlentities($v['g_name']); ?></td>
-      <td class="f-14 user-manage"><a title="编辑" href="javascript:;" onclick='student_edit("编辑","<?php echo url('index/student/edit',['uid'=>$v['uid']]); ?>","550","")' class="ml-5" style="text-decoration:none"><i class="Hui-iconfont Hui-iconfont-edit"></i></a>
-        <a title="删除" href="javascript:;" onclick='student_del(this,"<?php echo htmlentities($v['uid']); ?>")' class="ml-5" style="text-decoration:none"><i class="Hui-iconfont Hui-iconfont-del2"></i></a>
-      </td>
-    </tr>
-    <?php endforeach; endif; else: echo "" ;endif; ?>
+      <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+      <tr class="text-c">
+        <td><input type="checkbox" value="<?php echo htmlentities($v['uid']); ?>" name=""></td>
+        <td><?php echo htmlentities($v['uid']); ?></td>
+        <td><?php echo htmlentities($v['username']); ?></td>
+        <td><?php echo htmlentities($v['g_name']); ?></td>
+        <td class="f-14 user-manage"><a title="编辑" href="javascript:;" onclick='student_edit("编辑","<?php echo url('index/student/edit',['uid'=>$v['uid']]); ?>","550","")' class="ml-5" style="text-decoration:none"><i class="Hui-iconfont Hui-iconfont-edit"></i></a>
+          <a title="删除" href="javascript:;" onclick='student_del(this,"<?php echo htmlentities($v['uid']); ?>")' class="ml-5" style="text-decoration:none"><i class="Hui-iconfont Hui-iconfont-del2"></i></a>
+        </td>
+      </tr>
+      <?php endforeach; endif; else: echo "" ;endif; ?>
     </tbody>
   </table>
-  <div id="pageNav" class="pageNav"></div>
 </div>
 
 <!--_footer 作为公共模版分离出去-->
@@ -82,13 +81,16 @@
 </body>
 </html>
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="/static/LIB/My97DatePicker/4.8/WdatePicker.js"></script>
-<script type="text/javascript" src="/static/LIB/datatables/1.10.0/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="/static/LIB/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="/static/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/static/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
   $(function () {
     $(".table-sort").DataTable({
-    });
+      "aaSorting": [[ 1, "desc" ]],//默认第几个排序
+      "bStateSave": true,//状态保存
+      "pading":false,
+  });
+
   });
   /*学生-添加*/
     function student_add(title,url,w,h){

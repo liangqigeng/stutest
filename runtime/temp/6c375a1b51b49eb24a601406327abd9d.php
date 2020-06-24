@@ -1,4 +1,4 @@
-<?php /*a:5:{s:63:"D:\laragon\www\stutests\application\index\view\index\index.html";i:1592422268;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592417295;s:62:"D:\laragon\www\stutests\application\index\view\public\top.html";i:1592417448;s:63:"D:\laragon\www\stutests\application\index\view\public\left.html";i:1592476077;s:65:"D:\laragon\www\stutests\application\index\view\public\bottom.html";i:1592545332;}*/ ?>
+<?php /*a:5:{s:63:"D:\laragon\www\stutests\application\index\view\index\index.html";i:1592422268;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592569204;s:62:"D:\laragon\www\stutests\application\index\view\public\top.html";i:1592417448;s:63:"D:\laragon\www\stutests\application\index\view\public\left.html";i:1592476077;s:65:"D:\laragon\www\stutests\application\index\view\public\bottom.html";i:1592545332;}*/ ?>
 ﻿
 <!DOCTYPE HTML>
 <html>
@@ -11,16 +11,16 @@
     <link rel="Bookmark" href="/favicon.ico" >
     <link rel="Shortcut Icon" href="/favicon.ico" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/static/LIB/html5shiv.js"></script>
-    <script type="text/javascript" src="/static/LIB/respond.min.js"></script>
+    <script type="text/javascript" src="/static/lib/html5shiv.js"></script>
+    <script type="text/javascript" src="/static/lib/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
-    <link rel="stylesheet" type="text/css" href="/static/LIB/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/static/lib/Hui-iconfont/1.0.8/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/green/skin.css" id="skin" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css"/>
     <!--[if IE 6]>
-    <script type="text/javascript" src="/static/LIB/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script type="text/javascript" src="/static/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
     <title>学生管理系统</title>

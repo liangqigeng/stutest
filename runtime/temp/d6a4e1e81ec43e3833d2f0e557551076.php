@@ -1,4 +1,4 @@
-<?php /*a:3:{s:63:"D:\laragon\www\stutests\application\index\view\student\add.html";i:1592485936;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592417295;s:65:"D:\laragon\www\stutests\application\index\view\public\bottom.html";i:1592545332;}*/ ?>
+<?php /*a:3:{s:63:"D:\laragon\www\stutests\application\index\view\student\add.html";i:1592559152;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592569204;s:65:"D:\laragon\www\stutests\application\index\view\public\bottom.html";i:1592545332;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,23 +10,23 @@
     <link rel="Bookmark" href="/favicon.ico" >
     <link rel="Shortcut Icon" href="/favicon.ico" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/static/LIB/html5shiv.js"></script>
-    <script type="text/javascript" src="/static/LIB/respond.min.js"></script>
+    <script type="text/javascript" src="/static/lib/html5shiv.js"></script>
+    <script type="text/javascript" src="/static/lib/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
-    <link rel="stylesheet" type="text/css" href="/static/LIB/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/static/lib/Hui-iconfont/1.0.8/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/green/skin.css" id="skin" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css"/>
     <!--[if IE 6]>
-    <script type="text/javascript" src="/static/LIB/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script type="text/javascript" src="/static/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
     <title>学生管理系统</title>
     <meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
     <meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
 </head>
-<title>添加用户 - H-ui.admin v3.1</title>
+<title>添加学生 - H-ui.admin v3.1</title>
 <meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
 <meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
 </head>
@@ -93,7 +93,7 @@
 		var username = $('#username').val();
 		var grade = $('#grade').val();
 		if (username == '' || grade == '') {
-			layer.alert('用户名或班级不能为空', {
+			layer.alert('学生名或班级不能为空', {
 				icon: 2
 			});
 			return;

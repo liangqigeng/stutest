@@ -1,4 +1,4 @@
-<?php /*a:2:{s:65:"D:\laragon\www\stutests\application\index\view\index\welcome.html";i:1592472946;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592417295;}*/ ?>
+<?php /*a:2:{s:65:"D:\laragon\www\stutests\application\index\view\index\welcome.html";i:1592472946;s:65:"D:\laragon\www\stutests\application\index\view\public\header.html";i:1592569204;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,16 +10,16 @@
     <link rel="Bookmark" href="/favicon.ico" >
     <link rel="Shortcut Icon" href="/favicon.ico" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/static/LIB/html5shiv.js"></script>
-    <script type="text/javascript" src="/static/LIB/respond.min.js"></script>
+    <script type="text/javascript" src="/static/lib/html5shiv.js"></script>
+    <script type="text/javascript" src="/static/lib/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
-    <link rel="stylesheet" type="text/css" href="/static/LIB/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/static/lib/Hui-iconfont/1.0.8/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/green/skin.css" id="skin" />
     <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css"/>
     <!--[if IE 6]>
-    <script type="text/javascript" src="/static/LIB/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script type="text/javascript" src="/static/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
     <title>学生管理系统</title>

@@ -2,9 +2,8 @@
 namespace app\index\controller;
 
 use think\Controller;
-use think\facade\Session;
 use think\Db;
-
+use think\facade\Session;
 
 class Login extends Controller
 {
@@ -14,8 +13,8 @@ class Login extends Controller
 
     public function check()
     {
-        if(input('get.')){
-            $param = input('get.');
+        if(input('post.')){
+            $param = input('post.');
             $admin = Db::name('admin')->where('username', $param['username'])->find();
             $password = Db::name('admin')->where('username', $param['username'])->value('password');
             if ($admin) {

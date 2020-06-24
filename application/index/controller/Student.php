@@ -7,14 +7,20 @@ class Student extends Base
 {
     //显示数据
     public function index(){
-        $list = Db::name('user')->field('uid,username,g_name')->alias('a')
-            ->join('stu_grade b','b.gid=a.gid')->order('uid','desc')->select();
-        $this->assign([
-           'list'=>$list,
-        ]);
+            $list = Db::name('user')->field('uid,username,g_name')->alias('a')
+                ->join('stu_grade b','b.gid=a.gid')->order('uid','desc')->select();
+            $this->assign([
+                'list'=>$list,
+            ]);
         return $this->fetch();
     }
 
+    public function lists(){
+        if(request()->isGet()) {
+
+        }
+
+    }
 
     public function add(){
         $grades = Db::name('grade')->field('gid,g_name')->select();

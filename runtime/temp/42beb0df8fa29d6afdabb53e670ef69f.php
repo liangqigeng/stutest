@@ -1,4 +1,4 @@
-<?php /*a:1:{s:63:"D:\laragon\www\stutests\application\index\view\login\index.html";i:1592472091;}*/ ?>
+<?php /*a:1:{s:63:"D:\laragon\www\stutests\application\index\view\login\index.html";i:1592736014;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -7,17 +7,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<!--[if lt IE 9]>
-<script type="text/javascript" src="/static/lib/html5shiv.js"></script>
-<script type="text/javascript" src="/static/lib/respond.min.js"></script>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="/static/lib/html5shiv.js"></script>
+  <script type="text/javascript" src="/static/lib/respond.min.js"></script>
 <![endif]-->
 <link href="/static/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css" />
 <link href="/static/h-ui.admin/css/H-ui.login.css" rel="stylesheet" type="text/css" />
 <link href="/static/h-ui.admin/css/style.css" rel="stylesheet" type="text/css" />
 <link href="/static/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
-<!--[if IE 6]>
-<script type="text/javascript" src="/static/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
-<script>DD_belatedPNG.fix('*');</script>
+  <!--[if IE 6]>
+  <script type="text/javascript" src="/static/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+  <script>DD_belatedPNG.fix('*');</script>
+  <script type="text/javascript" src="/static/lib/jquery/1.9.1/jquery.min.js"></script>
 <![endif]-->
 <title>学生管理系统</title>
 <meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
@@ -28,7 +29,7 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form class="form form-horizontal" action="" method="">
+    <form class="form form-horizontal" action="" method="post">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
@@ -63,7 +64,8 @@
   </div>
 </div>
 <div class="footer">Copyright 你的公司名称 by H-ui.admin v3.1</div>
-<script type="text/javascript" src="/static/lib/jquery/1.9.1/jquery.min.js"></script> 
+
+<script type="text/javascript" src="/static/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/static/h-ui/js/H-ui.min.js"></script>
 <script type="text/javascript" src="/static/lib/layer/2.4/layer.js"></script>
 <script>
@@ -78,7 +80,7 @@
         }
         $.ajax({
             url: "<?php echo url('index/login/check'); ?>",
-            type: 'get',
+            type: 'post',
             dataType: 'json',
             data:  {
                 username: username,
